@@ -1,0 +1,58 @@
+@use "../../../SCSS/" as *;
+
+
+.now-slide {
+
+    .slide-card {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: 100%;
+        padding-top: 30%;
+        height: fit-content;
+        border-radius: 20px;
+        z-index: 1;
+
+        ::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $body-bg;
+            z-index: -1;
+            opacity: .1;
+
+        }
+
+        &__content {
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 3rem
+            }
+
+            &__info {
+                margin-left: 10%;
+                height: 70%;
+                @include flex(center, flex-start)
+                
+                
+            }
+
+            &__btn {
+                @include flex(center, flex-end);
+                margin-right: 10%;
+            }
+        }
+
+    }
+}

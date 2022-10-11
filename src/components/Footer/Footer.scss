@@ -1,0 +1,35 @@
+@use '../../SCSS/' as *;
+
+.footer {
+    position: relative;
+    padding: 4rem 2rem;
+    border-top: 0.5px solid #2f2e2e;
+
+    &__content {
+
+        display: grid;
+        grid-template-columns: auto auto;
+
+        a:hover {
+            color: $main-color;
+        }
+
+        &__logo {
+            @include flex(center, center);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $txt-color;
+
+            // @include flex(center, unset);
+        }
+
+        &__menu {
+            display: grid;
+            grid-template-rows: auto;
+            font-size: 1.5rem;
+            font-weight: 500;
+
+        }
+        
+    }
+}
