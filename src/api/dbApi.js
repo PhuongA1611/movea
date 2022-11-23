@@ -46,8 +46,16 @@ const dbApi = {
         const url = category[cate] + '/' + id;
         return axiosClient.get(url, params);
     },
+    getCredit: (cate, id, params) => {
+        const url = category[cate] + '/' + id + '/credits';
+        return axiosClient.get(url, params);
+    },
     getSimilar: (cate, id, params) => {
         const url = category[cate] + '/' + id + '/similar'
+        return axiosClient.get(url, params)
+    },
+    getVideo: (cate, id, params) => {
+        const url = category[cate] + '/' + id + '/videos'
         return axiosClient.get(url, params)
     }
 }

@@ -2,9 +2,6 @@
 
 .main {
     margin-top: $header-height;
-    margin-left: 60px;
-    margin-right: 80px;
-
     h2 {
         color: $white;
         padding: 10px 0;
@@ -14,17 +11,12 @@
 .home {
     display: flex;
     flex-direction: row;
-    
-
-    .container {
+    &__wrapper {
         flex: auto;
-        // background-color: antiquewhite;
         height: 100px;
         margin-left: 30px;
         margin-top: 30px;
         
-        
-
         &__list {
             margin-top: 10px;
             padding-bottom: 30px;

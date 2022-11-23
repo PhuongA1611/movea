@@ -43,7 +43,7 @@ const Header = () => {
 
     return (
         <div ref={headerRef} className='header'>
-            <div className='header__wrap'>
+            <div className='header__wrap container'>
                 <div className='logo'>
                     <Link to="/">MOVEA</Link>
                 </div>

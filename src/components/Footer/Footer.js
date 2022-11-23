@@ -5,7 +5,7 @@ import './Footer.scss'
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer container'>
       <div className='footer__content'>
         <div className='footer__content__logo'>
           <Link to="/">MOVEA</Link>

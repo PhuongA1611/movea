@@ -10,11 +10,11 @@ function App() {
 
   const params = {}
 
-  useEffect(() => {
-    dbApi.getDetail('movie','642885', {params}).then((response) => {
-      console.log(response)
-     }) 
-  }, [])
+  // useEffect(() => {
+  //   dbApi.getDetail('movie','642885', {params}).then((response) => {
+  //     console.log(response)
+  //    }) 
+  // }, [])
   return (
     <div>
       <BrowserRouter>
